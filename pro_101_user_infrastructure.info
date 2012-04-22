@@ -1,7 +1,7 @@
 name = "Pro 101 User Infrastructure"
 description = "User interface configuration and settings."
 core = "7.x"
-package = "Pro 101 System (G)"
+package = "Pro 101 Infrastructure (G)"
 php = "5.2.4"
 version = "7.x-1.0"
 project = "pro_101_user_infrastructure"

@@ -10,7 +10,7 @@
 function pro_101_user_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access overlay
+  // Exported permission: access overlay.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
     'roles' => array(
@@ -23,7 +23,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'overlay',
   );
 
-  // Exported permission: access toolbar
+  // Exported permission: access toolbar.
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
     'roles' => array(
@@ -33,7 +33,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'toolbar',
   );
 
-  // Exported permission: access user profiles
+  // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
@@ -47,7 +47,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer permissions
+  // Exported permission: administer permissions.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
@@ -56,7 +56,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer realname
+  // Exported permission: administer realname.
   $permissions['administer realname'] = array(
     'name' => 'administer realname',
     'roles' => array(
@@ -65,7 +65,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'realname',
   );
 
-  // Exported permission: administer shortcuts
+  // Exported permission: administer shortcuts.
   $permissions['administer shortcuts'] = array(
     'name' => 'administer shortcuts',
     'roles' => array(
@@ -74,7 +74,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: administer users
+  // Exported permission: administer users.
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
@@ -83,7 +83,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: cancel account
+  // Exported permission: cancel account.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
@@ -92,7 +92,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: change own username
+  // Exported permission: change own username.
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
@@ -101,7 +101,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: customize shortcut links
+  // Exported permission: customize shortcut links.
   $permissions['customize shortcut links'] = array(
     'name' => 'customize shortcut links',
     'roles' => array(
@@ -110,7 +110,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: select account cancellation method
+  // Exported permission: select account cancellation method.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
@@ -119,7 +119,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: switch shortcut sets
+  // Exported permission: switch shortcut sets.
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(

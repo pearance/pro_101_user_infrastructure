@@ -81,7 +81,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-10',
+        'weight' => '1',
       ),
     ),
   );
@@ -157,7 +157,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-9',
+        'weight' => '2',
       ),
     ),
   );
@@ -231,7 +231,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'rows' => '10',
         ),
         'type' => 'text_textarea',
-        'weight' => '-7',
+        'weight' => '4',
       ),
     ),
   );
@@ -307,7 +307,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-8',
+        'weight' => '3',
       ),
     ),
   );

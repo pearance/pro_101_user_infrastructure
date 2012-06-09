@@ -26,10 +26,19 @@ function pro_101_user_infrastructure_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'account' => array(
-          'weight' => '-6',
+          'weight' => '0',
         ),
         'timezone' => array(
-          'weight' => '10',
+          'weight' => '7',
+        ),
+        'redirect' => array(
+          'weight' => '8',
+        ),
+        'picture' => array(
+          'weight' => '6',
+        ),
+        'overlay_control' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(

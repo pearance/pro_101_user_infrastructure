@@ -13,6 +13,13 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'anonymous';
+  $strongarm->value = 'Anonymous';
+  $export['anonymous'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'clear_password_field';
   $strongarm->value = '1';
   $export['clear_password_field'] = $strongarm;

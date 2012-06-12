@@ -29,6 +29,7 @@ features[user_permission][] = administer users
 features[user_permission][] = cancel account
 features[user_permission][] = change own username
 features[user_permission][] = select account cancellation method
+features[variable][] = anonymous
 features[variable][] = clear_password_field
 features[variable][] = clear_password_field_login
 features[variable][] = field_bundle_settings_user__user

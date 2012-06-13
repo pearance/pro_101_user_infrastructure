@@ -49,7 +49,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -125,7 +125,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -275,7 +275,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',

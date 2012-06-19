@@ -10,7 +10,7 @@
 function pro_101_user_infrastructure_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'user-user-field_first_name'
+  // Exported field: 'user-user-field_first_name'.
   $fields['user-user-field_first_name'] = array(
     'field_config' => array(
       'active' => '1',
@@ -31,6 +31,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -86,7 +87,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_last_name'
+  // Exported field: 'user-user-field_last_name'.
   $fields['user-user-field_last_name'] = array(
     'field_config' => array(
       'active' => '1',
@@ -107,6 +108,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -162,7 +164,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_pro_bio'
+  // Exported field: 'user-user-field_pro_bio'.
   $fields['user-user-field_pro_bio'] = array(
     'field_config' => array(
       'active' => '1',
@@ -183,6 +185,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -236,7 +239,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_title'
+  // Exported field: 'user-user-field_title'.
   $fields['user-user-field_title'] = array(
     'field_config' => array(
       'active' => '1',
@@ -257,6 +260,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',

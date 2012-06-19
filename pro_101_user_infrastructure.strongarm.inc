@@ -385,5 +385,15 @@ Your account on [site:name] has been canceled.
   $strongarm->value = 0;
   $export['user_signatures'] = $strongarm;
 
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_user_user';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.8',
+  );
+  $export['xmlsitemap_settings_user_user'] = $strongarm;
+
   return $export;
 }

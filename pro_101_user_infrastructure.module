@@ -4,4 +4,4 @@
  * Code for the Pro 101 User Infrastructure feature.
  */
 
-include_once('pro_101_user_infrastructure.features.inc');
+include_once 'pro_101_user_infrastructure.features.inc';

@@ -10,9 +10,9 @@
 function pro_101_user_infrastructure_content_menu_links_defaults() {
   $menu_links = array();
 
-  // Exported menu link: menu-auxiliary:user/login
-  $menu_links['menu-auxiliary:user/login'] = array(
-    'menu_name' => 'menu-auxiliary',
+  // Exported menu link: navigation:user/login
+  $menu_links['navigation:user/login'] = array(
+    'menu_name' => 'navigation',
     'link_path' => 'user/login',
     'router_path' => 'user/login',
     'link_title' => 'Login',

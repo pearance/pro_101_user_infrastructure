@@ -82,7 +82,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '1',
+        'weight' => '-9',
       ),
     ),
   );
@@ -159,7 +159,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '-8',
       ),
     ),
   );
@@ -224,17 +224,21 @@ function pro_101_user_infrastructure_field_default_fields() {
       'label' => 'Professional Biography',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '1',
+        'text_processing' => '0',
         'user_register_form' => 1,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '10',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '-6',
       ),
     ),
   );
@@ -311,7 +315,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '-7',
       ),
     ),
   );

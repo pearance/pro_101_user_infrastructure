@@ -47,19 +47,22 @@ function pro_101_user_infrastructure_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'account' => array(
-          'weight' => '0',
+          'weight' => '-10',
         ),
         'timezone' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
         'picture' => array(
           'weight' => '6',
         ),
         'overlay_control' => array(
           'weight' => '5',
+        ),
+        'metatags' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(

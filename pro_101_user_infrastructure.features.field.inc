@@ -10,6 +10,71 @@
 function pro_101_user_infrastructure_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'user-user-field_bio_summary'.
+  $fields['user-user-field_bio_summary'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_bio_summary',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'user',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'user',
+      'field_name' => 'field_bio_summary',
+      'label' => 'Biographical Summary',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => 1,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '5',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '-5',
+      ),
+    ),
+  );
+
   // Exported field: 'user-user-field_first_name'.
   $fields['user-user-field_first_name'] = array(
     'field_config' => array(
@@ -322,6 +387,7 @@ function pro_101_user_infrastructure_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Biographical Summary');
   t('First Name');
   t('Last Name');
   t('Professional Biography');

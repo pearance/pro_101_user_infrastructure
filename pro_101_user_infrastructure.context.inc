@@ -21,6 +21,7 @@ function pro_101_user_infrastructure_context_default_contexts() {
       'values' => array(
         'user' => 'user',
         'user/*' => 'user/*',
+        '~user/*/edit' => '~user/*/edit',
       ),
     ),
     'user_page' => array(

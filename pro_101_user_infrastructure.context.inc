@@ -17,6 +17,12 @@ function pro_101_user_infrastructure_context_default_contexts() {
   $context->description = '';
   $context->tag = 'Section';
   $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'user' => 'user',
+        'user/*' => 'user/*',
+      ),
+    ),
     'user_page' => array(
       'values' => array(
         'view' => 'view',

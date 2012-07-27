@@ -15,10 +15,9 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'name' => 'access overlay',
     'roles' => array(
       0 => 'assistant',
-      1 => 'authenticated user',
-      2 => 'developer',
-      3 => 'professional',
-      4 => 'support',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'overlay',
   );

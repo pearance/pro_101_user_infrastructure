@@ -18,6 +18,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_bio_summary',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -57,7 +60,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
-        'user_register_form' => 1,
+        'user_register_form' => 0,
       ),
       'widget' => array(
         'active' => 1,
@@ -83,6 +86,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_first_name',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -135,15 +141,17 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_type' => 'user',
       'field_name' => 'field_first_name',
       'label' => 'First Name',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
-        'user_register_form' => 1,
+        'user_register_form' => 0,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => '60',
         ),
         'type' => 'text_textfield',
@@ -160,6 +168,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_last_name',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -212,15 +223,17 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_type' => 'user',
       'field_name' => 'field_last_name',
       'label' => 'Last Name',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
-        'user_register_form' => 1,
+        'user_register_form' => 0,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => '60',
         ),
         'type' => 'text_textfield',
@@ -237,6 +250,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_pro_bio',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -290,7 +306,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
-        'user_register_form' => 1,
+        'user_register_form' => 0,
       ),
       'widget' => array(
         'active' => 1,
@@ -316,6 +332,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_title',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -371,12 +390,14 @@ function pro_101_user_infrastructure_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
-        'user_register_form' => 1,
+        'user_register_form' => 0,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => '60',
         ),
         'type' => 'text_textfield',

@@ -9,8 +9,8 @@
  */
 function pro_101_user_infrastructure_default_rules_configuration() {
   $items = array();
-  $items['rules_redirect_post_self_registration'] = entity_import('rules_config', '{ "rules_redirect_post_self_registration" : {
-      "LABEL" : "Redirect post self registration",
+  $items['rules_redirect_post_consumer_registration'] = entity_import('rules_config', '{ "rules_redirect_post_consumer_registration" : {
+      "LABEL" : "Redirect post consumer registration",
       "PLUGIN" : "reaction rule",
       "REQUIRES" : [ "rules" ],
       "ON" : [ "user_insert" ],

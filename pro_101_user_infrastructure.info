@@ -17,6 +17,7 @@ dependencies[] = overlay
 dependencies[] = realname
 dependencies[] = rules
 dependencies[] = strongarm
+dependencies[] = workbench_moderation
 features[content_menu_links][] = menu-auxiliary:user/login
 features[context][] = profiles
 features[ctools][] = context:context:3

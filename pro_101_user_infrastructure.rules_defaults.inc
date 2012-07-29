@@ -12,8 +12,9 @@ function pro_101_user_infrastructure_default_rules_configuration() {
   $items['rules_redirect_post_consumer_content_creation'] = entity_import('rules_config', '{ "rules_redirect_post_consumer_content_creation" : {
       "LABEL" : "Redirect post consumer content creation",
       "PLUGIN" : "reaction rule",
+      "WEIGHT" : "-10",
       "TAGS" : [ "consumer" ],
-      "REQUIRES" : [ "rules" ],
+      "REQUIRES" : [ "rules", "workbench_moderation" ],
       "ON" : [ "node_insert" ],
       "IF" : [
         { "node_is_of_type" : {
@@ -35,6 +36,12 @@ function pro_101_user_infrastructure_default_rules_configuration() {
         }
       ],
       "DO" : [
+        { "workbench_moderation_set_state" : {
+            "node" : [ "node" ],
+            "moderation_state" : "needs_review",
+            "force_transition" : 1
+          }
+        },
         { "redirect" : { "url" : "admin\\/workbench" } },
         { "drupal_message" : {
             "message" : "Thank you for your testimonial. It will be reviewed and proofed before being published.",

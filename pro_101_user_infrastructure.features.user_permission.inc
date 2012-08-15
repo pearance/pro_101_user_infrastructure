@@ -98,6 +98,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'name' => 'cancel users with role anonymoususer and other roles',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'administerusersbyrole',
   );
@@ -137,6 +138,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'name' => 'cancel users with role authenticateduser and other roles',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'administerusersbyrole',
   );
@@ -241,6 +243,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'name' => 'edit users with role anonymoususer and other roles',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'administerusersbyrole',
   );
@@ -280,6 +283,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'name' => 'edit users with role authenticateduser and other roles',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'administerusersbyrole',
   );

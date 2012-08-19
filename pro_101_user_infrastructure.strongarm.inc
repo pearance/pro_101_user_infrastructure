@@ -84,6 +84,13 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'hide_profile_destination';
+  $strongarm->value = 'about';
+  $export['hide_profile_destination'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_user_pattern';
   $strongarm->value = 'user/[user:field_first_name]-[user:field_last_name]';
   $export['pathauto_user_pattern'] = $strongarm;

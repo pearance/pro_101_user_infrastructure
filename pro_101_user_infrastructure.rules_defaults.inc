@@ -44,7 +44,7 @@ function pro_101_user_infrastructure_default_rules_configuration() {
         },
         { "redirect" : { "url" : "admin\\/workbench" } },
         { "drupal_message" : {
-            "message" : "Thank you for your testimonial. It will be reviewed and proofed before being published.",
+            "message" : "Thank you for your testimonial. You are free to make edits until its publication.",
             "repeat" : 0
           }
         }

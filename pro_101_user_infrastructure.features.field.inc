@@ -19,7 +19,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_bio_summary',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'format' => array(
@@ -42,11 +42,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'user',
-      'default_value' => array(
-        0 => array(
-          'value' => 'Pearance support staff is a team of enthusiastic web developers, designers, and writers. Who are committed to assisting in delivering relevant information to consumers in a clean, concise, and timely manner.',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -91,7 +87,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_first_name',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'format' => array(
@@ -116,11 +112,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'user',
-      'default_value' => array(
-        0 => array(
-          'value' => 'Pearance',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -176,7 +168,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_last_name',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'format' => array(
@@ -201,11 +193,7 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'user',
-      'default_value' => array(
-        0 => array(
-          'value' => 'Support',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -261,7 +249,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_pro_bio',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'format' => array(
@@ -343,7 +331,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_title',
       'field_permissions' => array(
-        'type' => '0',
+        'type' => '2',
       ),
       'foreign keys' => array(
         'format' => array(

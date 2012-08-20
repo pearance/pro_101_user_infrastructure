@@ -5,3 +5,88 @@
  */
 
 include_once 'pro_101_user_infrastructure.features.inc';
+
+/**
+ * Implements hook_field_default_fields().
+ */
+
+/**
+ * Implements hook_permission().
+ */
+function pro_101_user_infrastructure_permission() {
+  return array(
+    'view private profiles' => array(
+      'title' => t('View private profiles'),
+      'description' => t('View user profiles that are marked as private.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_user_view().
+ */
+function pro_101_user_infrastructure_user_view($account, $view_mode, $langcode) {
+  global $user;
+
+  // If the current user has the correct permission, just let them view the
+  // page.
+  if (user_access('view private profiles') || $user->uid == $account->uid) {
+    return;
+  }
+
+  // If the user has the privacy field set, don't allow the visitor to see
+  // their profile page.
+  if (!empty($account->field_hide_profile['und'][0]['value'])) {
+    // Redirect to the configured page
+    drupal_goto(variable_get('hide_profile_destination', ''));
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function pro_101_user_infrastructure_menu() {
+  $items = array();
+
+  $items['admin/config/people/hide-profile'] = array(
+    'title' => 'Hide profile',
+    'description' => 'Configuration for the profile privacy module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('hide_profile_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'pro_101_user_infrastructure.pages.inc',
+  );
+
+  return $items;
+}
+
+
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function pro_101_user_infrastructure_theme_registry_alter(&$theme_registry) {
+  if (!empty($theme_registry['username'])) {
+    // Replace the core theme implementation.
+    $theme_registry['username']['process functions'][0] = 'hide_profile_username';
+  }
+}
+
+/**
+ * theme_username() override.
+ */
+function pro_101_user_infrastructure_username(&$variables) {
+  $account = $variables['account'];
+
+  if (isset($variables['link_path'])) {
+    $output = l($variables['name'] . $variables['extra'], $variables['link_path'], $variables['link_options']);
+  }
+  else if (!empty($account->field_hide_profile['und'][0]['value'])) {
+    $output = '<span' . drupal_attributes($variables['attributes_array']) . '>' . $variables['name'] . $variables['extra'] . '</span>';
+  }
+  else {
+    $output = '<span' . drupal_attributes($variables['attributes_array']) . '>' . $variables['name'] . $variables['extra'] . '</span>';
+  }
+  return $output;
+}

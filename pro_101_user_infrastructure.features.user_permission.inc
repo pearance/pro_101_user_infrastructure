@@ -633,7 +633,7 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'roles' => array(
       0 => 'developer',
     ),
-    'module' => 'hide_profile',
+    'module' => 'pro_101_user_infrastructure',
   );
 
   return $permissions;

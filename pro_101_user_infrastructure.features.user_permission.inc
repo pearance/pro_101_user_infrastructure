@@ -228,6 +228,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: create field_hide_profile.
+  $permissions['create field_hide_profile'] = array(
+    'name' => 'create field_hide_profile',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'developer',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: create field_last_name.
   $permissions['create field_last_name'] = array(
     'name' => 'create field_last_name',
@@ -288,6 +298,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: edit field_hide_profile.
+  $permissions['edit field_hide_profile'] = array(
+    'name' => 'edit field_hide_profile',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: edit field_last_name.
   $permissions['edit field_last_name'] = array(
     'name' => 'edit field_last_name',
@@ -338,6 +358,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
       1 => 'developer',
       2 => 'professional',
       3 => 'support',
+    ),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: edit own field_hide_profile.
+  $permissions['edit own field_hide_profile'] = array(
+    'name' => 'edit own field_hide_profile',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'field_permissions',
   );
@@ -536,6 +566,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: view field_hide_profile.
+  $permissions['view field_hide_profile'] = array(
+    'name' => 'view field_hide_profile',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: view field_last_name.
   $permissions['view field_last_name'] = array(
     'name' => 'view field_last_name',
@@ -589,6 +629,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
       1 => 'developer',
       2 => 'professional',
       3 => 'support',
+    ),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: view own field_hide_profile.
+  $permissions['view own field_hide_profile'] = array(
+    'name' => 'view own field_hide_profile',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'field_permissions',
   );

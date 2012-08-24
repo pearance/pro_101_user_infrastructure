@@ -73,7 +73,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '-5',
+        'weight' => '11',
       ),
     ),
   );
@@ -154,7 +154,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-9',
+        'weight' => '7',
       ),
     ),
   );
@@ -220,7 +220,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_onoff',
-        'weight' => '5',
+        'weight' => '12',
       ),
     ),
   );
@@ -301,7 +301,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-8',
+        'weight' => '8',
       ),
     ),
   );
@@ -383,7 +383,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'rows' => '10',
         ),
         'type' => 'text_textarea',
-        'weight' => '-6',
+        'weight' => '10',
       ),
     ),
   );
@@ -465,7 +465,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '-7',
+        'weight' => '9',
       ),
     ),
   );

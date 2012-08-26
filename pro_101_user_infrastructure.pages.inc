@@ -9,7 +9,7 @@
 /**
  * Settings form.
  */
-function pro_101_user_infrastructure_form($form, &$form_state) {
+function hide_profile_form($form, &$form_state) {
   $form = array();
 
   $form['hide_profile_destination'] = array(

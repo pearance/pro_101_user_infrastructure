@@ -199,7 +199,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '8',
@@ -217,7 +217,6 @@ function pro_101_user_infrastructure_field_default_fields() {
         'module' => 'options',
         'settings' => array(
           'display_label' => 1,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_onoff',
         'weight' => '12',

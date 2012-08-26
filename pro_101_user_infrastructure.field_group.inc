@@ -117,8 +117,8 @@ function pro_101_user_infrastructure_field_group_info() {
     'label' => 'Tabs',
     'weight' => '0',
     'children' => array(
-      0 => 'group_profile',
-      1 => 'group_account',
+      0 => 'group_account',
+      1 => 'group_profile',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

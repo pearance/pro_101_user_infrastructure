@@ -85,7 +85,7 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'hide_profile_destination';
-  $strongarm->value = 'pearance-support-staff';
+  $strongarm->value = '<front>';
   $export['hide_profile_destination'] = $strongarm;
 
   $strongarm = new stdClass();

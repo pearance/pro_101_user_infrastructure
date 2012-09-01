@@ -10,20 +10,6 @@
 function pro_101_user_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access overlay.
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'assistant',
-      2 => 'authenticated user',
-      3 => 'developer',
-      4 => 'professional',
-      5 => 'support',
-    ),
-    'module' => 'overlay',
-  );
-
   // Exported permission: access user profiles.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',

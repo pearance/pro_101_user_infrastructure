@@ -52,6 +52,16 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: assign roles.
+  $permissions['assign roles'] = array(
+    'name' => 'assign roles',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'roleassign',
+  );
+
   // Exported permission: cancel account.
   $permissions['cancel account'] = array(
     'name' => 'cancel account',

@@ -105,6 +105,18 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'roleassign_roles';
+  $strongarm->value = array(
+    8998634 => '8998634',
+    96220023 => '96220023',
+    160159362 => 0,
+    121011395 => 0,
+  );
+  $export['roleassign_roles'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
   $strongarm->value = '121011395';
   $export['user_admin_role'] = $strongarm;

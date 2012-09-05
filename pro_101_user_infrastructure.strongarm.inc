@@ -50,10 +50,10 @@ function pro_101_user_infrastructure_strongarm() {
           'weight' => '0',
         ),
         'timezone' => array(
-          'weight' => '4',
+          'weight' => '3',
         ),
         'redirect' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
         'picture' => array(
           'weight' => '6',
@@ -62,7 +62,7 @@ function pro_101_user_infrastructure_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '2',
         ),
       ),
       'display' => array(

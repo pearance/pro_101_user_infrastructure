@@ -219,7 +219,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => '12',
+        'weight' => '4',
       ),
     ),
   );

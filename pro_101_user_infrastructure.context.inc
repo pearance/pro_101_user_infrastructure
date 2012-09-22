@@ -33,18 +33,7 @@ function pro_101_user_infrastructure_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'delta_blocks-tabs' => array(
-          'module' => 'delta_blocks',
-          'delta' => 'tabs',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
 
   // Translatables

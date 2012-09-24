@@ -56,7 +56,7 @@ function pro_101_user_infrastructure_content_menu_links_defaults() {
     'external' => '1',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '45',
+    'weight' => '1',
   );
   // Translatables
   // Included for use with string extractors like potx.

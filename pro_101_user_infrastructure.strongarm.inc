@@ -62,7 +62,7 @@ function pro_101_user_infrastructure_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '2',
+          'weight' => '12',
         ),
       ),
       'display' => array(

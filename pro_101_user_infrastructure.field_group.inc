@@ -24,11 +24,10 @@ function pro_101_user_infrastructure_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_hide_profile',
-      1 => 'metatags',
-      2 => 'redirect',
-      3 => 'account',
-      4 => 'timezone',
-      5 => 'group_hide',
+      1 => 'redirect',
+      2 => 'account',
+      3 => 'timezone',
+      4 => 'group_hide',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -89,7 +88,8 @@ function pro_101_user_infrastructure_field_group_info() {
       2 => 'field_last_name',
       3 => 'field_pro_bio',
       4 => 'field_title',
-      5 => 'picture',
+      5 => 'metatags',
+      6 => 'picture',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

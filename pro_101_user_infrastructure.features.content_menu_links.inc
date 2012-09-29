@@ -33,7 +33,7 @@ function pro_101_user_infrastructure_content_menu_links_defaults() {
     'menu_name' => 'user-menu',
     'link_path' => '<front>',
     'router_path' => '',
-    'link_title' => 'User Settings',
+    'link_title' => 'My Settings',
     'options' => array(
       'menu_token_link_path' => '[current-user:edit-url]',
       'menu_token_data' => array(
@@ -61,7 +61,7 @@ function pro_101_user_infrastructure_content_menu_links_defaults() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Login');
-  t('User Settings');
+  t('My Settings');
 
 
   return $menu_links;

@@ -45,6 +45,7 @@ features[field_group][] = group_tabs|user|user|form
 features[mollom_form][] = user_pass
 features[mollom_form][] = user_register_form
 features[user_permission][] = access user profiles
+features[user_permission][] = administer menu_token
 features[user_permission][] = administer permissions
 features[user_permission][] = administer realname
 features[user_permission][] = administer users

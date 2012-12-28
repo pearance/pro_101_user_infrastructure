@@ -24,6 +24,15 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: administer menu_token.
+  $permissions['administer menu_token'] = array(
+    'name' => 'administer menu_token',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'menu_token',
+  );
+
   // Exported permission: administer permissions.
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',

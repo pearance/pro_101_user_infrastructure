@@ -48,13 +48,9 @@ function pro_101_user_infrastructure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '5',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'user',
@@ -62,7 +58,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'label' => 'Biographical Summary',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => 0,
       ),
       'widget' => array(
@@ -121,9 +117,10 @@ function pro_101_user_infrastructure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
+          'type' => 'text_plain',
+          'weight' => '0',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -211,7 +208,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '8',
+          'weight' => '6',
         ),
       ),
       'entity_type' => 'user',
@@ -273,9 +270,10 @@ function pro_101_user_infrastructure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '2',
+          'type' => 'text_plain',
+          'weight' => '1',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -359,12 +357,9 @@ function pro_101_user_infrastructure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
+          'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -392,7 +387,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'label' => 'Professional Biography',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => 0,
       ),
       'widget' => array(
@@ -452,12 +447,9 @@ function pro_101_user_infrastructure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
+          'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'hidden',

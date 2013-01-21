@@ -43,6 +43,9 @@ function pro_101_user_infrastructure_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -68,7 +71,7 @@ function pro_101_user_infrastructure_strongarm() {
       'display' => array(
         'summary' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '5',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -369,14 +372,14 @@ Your account on [site:name] has been canceled.
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_dimensions';
-  $strongarm->value = '100x100';
+  $strongarm->value = '';
   $export['user_picture_dimensions'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_file_size';
-  $strongarm->value = '50';
+  $strongarm->value = '';
   $export['user_picture_file_size'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -397,7 +400,7 @@ Your account on [site:name] has been canceled.
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_style';
-  $strongarm->value = '';
+  $strongarm->value = 'square_thumbnail';
   $export['user_picture_style'] = $strongarm;
 
   $strongarm = new stdClass();

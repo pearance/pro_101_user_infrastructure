@@ -10,73 +10,6 @@
 function pro_101_user_infrastructure_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'user-user-field_bio_summary'.
-  $fields['user-user-field_bio_summary'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_bio_summary',
-      'field_permissions' => array(
-        'type' => '2',
-      ),
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'user',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '4',
-        ),
-      ),
-      'entity_type' => 'user',
-      'field_name' => 'field_bio_summary',
-      'label' => 'Biographical Summary',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '1',
-        'user_register_form' => 0,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'maxlength_js' => '',
-          'maxlength_js_enforce' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'maxlength_js_truncate_html' => 0,
-          'rows' => '5',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '11',
-      ),
-    ),
-  );
-
   // Exported field: 'user-user-field_first_name'.
   $fields['user-user-field_first_name'] = array(
     'field_config' => array(
@@ -120,7 +53,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_plain',
-          'weight' => '0',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -160,7 +93,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '7',
+        'weight' => '30',
       ),
     ),
   );
@@ -208,7 +141,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '12',
         ),
       ),
       'entity_type' => 'user',
@@ -273,7 +206,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_plain',
-          'weight' => '1',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -313,7 +246,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '8',
+        'weight' => '31',
       ),
     ),
   );
@@ -327,7 +260,7 @@ function pro_101_user_infrastructure_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_pro_bio',
       'field_permissions' => array(
-        'type' => '2',
+        'type' => '0',
       ),
       'foreign keys' => array(
         'format' => array(
@@ -346,47 +279,28 @@ function pro_101_user_infrastructure_field_default_fields() {
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
-      'type' => 'text_long',
+      'type' => 'text_with_summary',
     ),
     'field_instance' => array(
       'bundle' => 'user',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'RECOMMENDED: Click \'Edit Summary\' to enter a specific summary that will be used on the about page and in the \'About this Author\' block.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '3',
-        ),
-        'token' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '9',
         ),
       ),
       'entity_type' => 'user',
       'field_name' => 'field_pro_bio',
-      'label' => 'Professional Biography',
+      'label' => 'Biography',
       'required' => 0,
       'settings' => array(
+        'display_summary' => 1,
         'text_processing' => '1',
         'user_register_form' => 0,
       ),
@@ -397,11 +311,14 @@ function pro_101_user_infrastructure_field_default_fields() {
           'maxlength_js' => '',
           'maxlength_js_enforce' => 0,
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_label_summary' => 'Summary is limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_summary' => '400',
           'maxlength_js_truncate_html' => 0,
-          'rows' => '10',
+          'rows' => '40',
+          'summary_rows' => 5,
         ),
-        'type' => 'text_textarea',
-        'weight' => '10',
+        'type' => 'text_textarea_with_summary',
+        'weight' => '31',
       ),
     ),
   );
@@ -449,7 +366,7 @@ function pro_101_user_infrastructure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '4',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -489,18 +406,18 @@ function pro_101_user_infrastructure_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '9',
+        'weight' => '32',
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Biographical Summary');
+  t('Biography');
   t('First Name');
   t('Hide profile');
   t('Last Name');
-  t('Professional Biography');
+  t('RECOMMENDED: Click \'Edit Summary\' to enter a specific summary that will be used on the about page and in the \'About this Author\' block.');
   t('Title');
 
   return $fields;

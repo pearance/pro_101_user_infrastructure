@@ -83,13 +83,8 @@ function pro_101_user_infrastructure_field_group_info() {
     'label' => 'Profile',
     'weight' => '2',
     'children' => array(
-      0 => 'field_bio_summary',
-      1 => 'field_first_name',
-      2 => 'field_last_name',
-      3 => 'field_pro_bio',
-      4 => 'field_title',
-      5 => 'metatags',
-      6 => 'picture',
+      0 => 'metatags',
+      1 => 'group_profile_tabs',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

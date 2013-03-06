@@ -215,16 +215,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: create field_bio_summary.
-  $permissions['create field_bio_summary'] = array(
-    'name' => 'create field_bio_summary',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'developer',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: create field_first_name.
   $permissions['create field_first_name'] = array(
     'name' => 'create field_first_name',
@@ -255,16 +245,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: create field_pro_bio.
-  $permissions['create field_pro_bio'] = array(
-    'name' => 'create field_pro_bio',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'developer',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: create field_title.
   $permissions['create field_title'] = array(
     'name' => 'create field_title',
@@ -283,16 +263,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
       1 => 'support',
     ),
     'module' => 'administerusersbyrole',
-  );
-
-  // Exported permission: edit field_bio_summary.
-  $permissions['edit field_bio_summary'] = array(
-    'name' => 'edit field_bio_summary',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
   );
 
   // Exported permission: edit field_first_name.
@@ -325,34 +295,12 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: edit field_pro_bio.
-  $permissions['edit field_pro_bio'] = array(
-    'name' => 'edit field_pro_bio',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: edit field_title.
   $permissions['edit field_title'] = array(
     'name' => 'edit field_title',
     'roles' => array(
       0 => 'developer',
       1 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit own field_bio_summary.
-  $permissions['edit own field_bio_summary'] = array(
-    'name' => 'edit own field_bio_summary',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
     ),
     'module' => 'field_permissions',
   );
@@ -387,17 +335,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
       1 => 'developer',
       2 => 'professional',
       3 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit own field_pro_bio.
-  $permissions['edit own field_pro_bio'] = array(
-    'name' => 'edit own field_pro_bio',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
     ),
     'module' => 'field_permissions',
   );
@@ -549,20 +486,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: view field_bio_summary.
-  $permissions['view field_bio_summary'] = array(
-    'name' => 'view field_bio_summary',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'assistant',
-      2 => 'authenticated user',
-      3 => 'developer',
-      4 => 'professional',
-      5 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: view field_first_name.
   $permissions['view field_first_name'] = array(
     'name' => 'view field_first_name',
@@ -595,17 +518,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: view field_pro_bio.
-  $permissions['view field_pro_bio'] = array(
-    'name' => 'view field_pro_bio',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
-      2 => 'developer',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: view field_title.
   $permissions['view field_title'] = array(
     'name' => 'view field_title',
@@ -613,18 +525,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
       0 => 'anonymous user',
       1 => 'authenticated user',
       2 => 'developer',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: view own field_bio_summary.
-  $permissions['view own field_bio_summary'] = array(
-    'name' => 'view own field_bio_summary',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
     ),
     'module' => 'field_permissions',
   );
@@ -659,17 +559,6 @@ function pro_101_user_infrastructure_user_default_permissions() {
       1 => 'developer',
       2 => 'professional',
       3 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: view own field_pro_bio.
-  $permissions['view own field_pro_bio'] = array(
-    'name' => 'view own field_pro_bio',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
     ),
     'module' => 'field_permissions',
   );

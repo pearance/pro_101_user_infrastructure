@@ -15,30 +15,24 @@ function pro_101_user_infrastructure_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'profiles';
   $context->description = '';
-  $context->tag = 'Section';
+  $context->tag = 'Pages';
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'user' => 'user',
-        'user/*' => 'user/*',
-        '~user/*/edit' => '~user/*/edit',
-      ),
-    ),
-    'user_page' => array(
-      'values' => array(
-        'view' => 'view',
-      ),
-      'options' => array(
-        'mode' => 'all',
+        'people/*' => 'people/*',
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'theme_html' => array(
+      'class' => 'user-profile',
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Section');
+  t('Pages');
   $export['profiles'] = $context;
 
   return $export;

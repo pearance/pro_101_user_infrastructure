@@ -59,19 +59,22 @@ function pro_101_user_infrastructure_strongarm() {
           'weight' => '1',
         ),
         'picture' => array(
-          'weight' => '6',
+          'weight' => '29',
         ),
         'overlay_control' => array(
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '32',
+        ),
+        'googleanalytics' => array(
+          'weight' => '1',
         ),
       ),
       'display' => array(
         'summary' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '11',
             'visible' => FALSE,
           ),
           'full' => array(
@@ -358,14 +361,14 @@ Your account on [site:name] has been canceled.
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_pictures';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['user_pictures'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_default';
-  $strongarm->value = 'http://i1139.photobucket.com/albums/n543/pearance/default1.gif';
+  $strongarm->value = '';
   $export['user_picture_default'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -407,7 +410,7 @@ Your account on [site:name] has been canceled.
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_register';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['user_register'] = $strongarm;
 
   $strongarm = new stdClass();

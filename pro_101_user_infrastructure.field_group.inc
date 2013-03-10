@@ -45,6 +45,122 @@ function pro_101_user_infrastructure_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_awards_organizations|user|user|form';
+  $field_group->group_name = 'group_awards_organizations';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'Awards & Organizations',
+    'weight' => '30',
+    'children' => array(
+      0 => 'field_awards_organizations',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Awards & Organizations',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_awards_organizations|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_biography|user|user|form';
+  $field_group->group_name = 'group_biography';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'Biography',
+    'weight' => '32',
+    'children' => array(
+      0 => 'field_pro_bio',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Biography',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_biography|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_education|user|user|form';
+  $field_group->group_name = 'group_education';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'Education',
+    'weight' => '29',
+    'children' => array(
+      0 => 'field_education',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Education',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_education|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_general_info|user|user|form';
+  $field_group->group_name = 'group_general_info';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'General Information',
+    'weight' => '27',
+    'children' => array(
+      0 => 'field_first_name',
+      1 => 'field_last_name',
+      2 => 'field_title',
+      3 => 'field_user_image',
+      4 => 'field_specialties',
+      5 => 'picture',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_general_info|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_hide|user|user|form';
   $field_group->group_name = 'group_hide';
   $field_group->entity_type = 'user';
@@ -69,6 +185,71 @@ function pro_101_user_infrastructure_field_group_info() {
     ),
   );
   $export['group_hide|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_office_info|user|user|form';
+  $field_group->group_name = 'group_office_info';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'Office Information',
+    'weight' => '31',
+    'children' => array(
+      0 => 'field_office',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Office Information',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_office_info|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_profile_tabs|user|user|form';
+  $field_group->group_name = 'group_profile_tabs';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile';
+  $field_group->data = array(
+    'label' => 'Profile Tabs',
+    'weight' => '27',
+    'children' => array(
+      0 => 'group_general_info',
+      1 => 'group_social_networks',
+      2 => 'group_education',
+      3 => 'group_biography',
+      4 => 'group_awards_organizations',
+      5 => 'group_office_info',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Profile Tabs',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h2',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_profile_tabs|user|user|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -98,6 +279,37 @@ function pro_101_user_infrastructure_field_group_info() {
     ),
   );
   $export['group_profile|user|user|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_social_networks|user|user|form';
+  $field_group->group_name = 'group_social_networks';
+  $field_group->entity_type = 'user';
+  $field_group->bundle = 'user';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_profile_tabs';
+  $field_group->data = array(
+    'label' => 'Social Networks',
+    'weight' => '28',
+    'children' => array(
+      0 => 'field_linkedin',
+      1 => 'field_facebook',
+      2 => 'field_twitter',
+      3 => 'field_google_plus',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Social Networks',
+      'instance_settings' => array(
+        'required_fields' => 0,
+        'classes' => '',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_social_networks|user|user|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

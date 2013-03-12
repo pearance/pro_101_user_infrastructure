@@ -34,6 +34,30 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_field_group';
+  $strongarm->value = array(
+    'group_card|user|user|default' => TRUE,
+    'group_main|user|user|default' => TRUE,
+    'group_bio|user|user|default' => TRUE,
+    'group_profile|user|user|default' => TRUE,
+    'group_specialties|user|user|default' => TRUE,
+    'group_pro_attributes|user|user|default' => TRUE,
+    'group_pro_info|user|user|default' => TRUE,
+    'group_education|user|user|default' => TRUE,
+    'group_general_info|user|user|form' => FALSE,
+    'group_profile_tabs|user|user|form' => FALSE,
+    'group_attributes|user|user|form' => TRUE,
+    'group_social_networks|user|user|form' => FALSE,
+    'group_education|user|user|form' => FALSE,
+    'group_biography|user|user|form' => FALSE,
+    'group_awards_organizations|user|user|form' => FALSE,
+    'group_office_info|user|user|form' => FALSE,
+  );
+  $export['default_field_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_user__user';
   $strongarm->value = array(
     'view_modes' => array(

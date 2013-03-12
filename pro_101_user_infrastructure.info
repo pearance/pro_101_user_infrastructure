@@ -126,6 +126,7 @@ features[user_permission][] = view private profiles
 features[variable][] = anonymous
 features[variable][] = clear_password_field
 features[variable][] = clear_password_field_login
+features[variable][] = default_field_group
 features[variable][] = field_bundle_settings_user__user
 features[variable][] = hide_profile_destination
 features[variable][] = pathauto_user_pattern

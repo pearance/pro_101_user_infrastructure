@@ -169,7 +169,7 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm->value = array(
     8998634 => '8998634',
     96220023 => '96220023',
-    160159362 => 0,
+    160159362 => '160159362',
     121011395 => 0,
   );
   $export['roleassign_roles'] = $strongarm;

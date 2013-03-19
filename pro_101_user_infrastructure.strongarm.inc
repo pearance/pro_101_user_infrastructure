@@ -98,7 +98,7 @@ function pro_101_user_infrastructure_strongarm() {
       'display' => array(
         'summary' => array(
           'default' => array(
-            'weight' => '11',
+            'weight' => '13',
             'visible' => FALSE,
           ),
           'full' => array(

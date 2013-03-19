@@ -10,142 +10,6 @@
 function pro_101_user_infrastructure_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_education-field_degree'.
-  $fields['field_collection_item-field_education-field_degree'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_degree',
-      'field_permissions' => array(
-        'type' => '0',
-      ),
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_education',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_degree',
-      'label' => 'Degree',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'field_collection_item-field_education-field_school'.
-  $fields['field_collection_item-field_education-field_school'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_school',
-      'field_permissions' => array(
-        'type' => '0',
-      ),
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_education',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_school',
-      'label' => 'School',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'maxlength_js' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => 0,
-      ),
-    ),
-  );
-
   // Exported field: 'user-user-field_awards_organizations'.
   $fields['user-user-field_awards_organizations'] = array(
     'field_config' => array(
@@ -230,23 +94,31 @@ function pro_101_user_infrastructure_field_default_fields() {
   $fields['user-user-field_education'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_education',
       'field_permissions' => array(
         'type' => '0',
       ),
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'field_collection',
-      'settings' => array(
-        'hide_blank_items' => 1,
-        'path' => '',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
       ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'field_collection',
+      'type' => 'text_long',
     ),
     'field_instance' => array(
       'bundle' => 'user',
@@ -255,17 +127,11 @@ function pro_101_user_infrastructure_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => '',
-            'delete' => '',
-            'description' => 0,
-            'edit' => '',
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => '19',
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 22,
         ),
       ),
       'entity_type' => 'user',
@@ -273,16 +139,21 @@ function pro_101_user_infrastructure_field_default_fields() {
       'label' => 'Education',
       'required' => 0,
       'settings' => array(
+        'text_processing' => '1',
         'user_register_form' => 0,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
+        'active' => 1,
+        'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '5',
         ),
-        'type' => 'field_collection_embed',
-        'weight' => '30',
+        'type' => 'text_textarea',
+        'weight' => '37',
       ),
     ),
   );
@@ -1281,7 +1152,6 @@ function pro_101_user_infrastructure_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Awards & Organizations');
   t('Biography');
-  t('Degree');
   t('Education');
   t('Facebook');
   t('First Name');
@@ -1291,7 +1161,6 @@ function pro_101_user_infrastructure_field_default_fields() {
   t('LinkedIn');
   t('Office');
   t('RECOMMENDED: Click \'Edit Summary\' to enter a specific summary that will be used on the about page and in the \'About this Author\' block.');
-  t('School');
   t('Specialties');
   t('Title');
   t('Twitter');

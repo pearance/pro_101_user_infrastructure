@@ -141,10 +141,9 @@ function pro_101_user_infrastructure_field_group_info() {
     'children' => array(
       0 => 'field_first_name',
       1 => 'field_last_name',
-      2 => 'field_title',
-      3 => 'field_user_image',
-      4 => 'field_specialties',
-      5 => 'picture',
+      2 => 'field_specialties',
+      3 => 'field_title',
+      4 => 'field_user_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -227,12 +226,12 @@ function pro_101_user_infrastructure_field_group_info() {
     'label' => 'Profile Tabs',
     'weight' => '27',
     'children' => array(
-      0 => 'group_general_info',
-      1 => 'group_social_networks',
+      0 => 'group_awards_organizations',
+      1 => 'group_biography',
       2 => 'group_education',
-      3 => 'group_biography',
-      4 => 'group_awards_organizations',
-      5 => 'group_office_info',
+      3 => 'group_general_info',
+      4 => 'group_office_info',
+      5 => 'group_social_networks',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -293,10 +292,10 @@ function pro_101_user_infrastructure_field_group_info() {
     'label' => 'Social Networks',
     'weight' => '28',
     'children' => array(
-      0 => 'field_linkedin',
-      1 => 'field_facebook',
-      2 => 'field_twitter',
-      3 => 'field_google_plus',
+      0 => 'field_facebook',
+      1 => 'field_google_plus',
+      2 => 'field_linkedin',
+      3 => 'field_twitter',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

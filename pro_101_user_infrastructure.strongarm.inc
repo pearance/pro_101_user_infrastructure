@@ -147,13 +147,6 @@ function pro_101_user_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'upload_default_avatar_fid';
-  $strongarm->value = '22';
-  $export['upload_default_avatar_fid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
   $strongarm->value = '121011395';
   $export['user_admin_role'] = $strongarm;
@@ -401,29 +394,6 @@ Your account on [site:name] has been canceled.
   $strongarm->name = 'user_picture_default';
   $strongarm->value = 'public://images/user-pics/picture-default.png';
   $export['user_picture_default'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_picture_default_upload';
-  $strongarm->value = (object) array(
-    'uid' => '1',
-    'status' => 0,
-    'filename' => 'headshot2.png',
-    'uri' => 'temporary://headshot2.png',
-    'filemime' => 'image/png',
-    'filesize' => 2256,
-    'source' => 'user_picture_default_upload',
-    'destination' => 'temporary://headshot2.png',
-    'timestamp' => 1364558234,
-    'type' => 'image',
-    'fid' => '22',
-    'image_dimensions' => array(
-      'width' => 153,
-      'height' => 161,
-    ),
-  );
-  $export['user_picture_default_upload'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

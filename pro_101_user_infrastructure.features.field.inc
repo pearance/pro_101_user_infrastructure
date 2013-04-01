@@ -1029,125 +1029,6 @@ function pro_101_user_infrastructure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'user-user-field_user_image'.
-  $fields['user-user-field_user_image'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_user_image',
-      'field_permissions' => array(
-        'type' => '0',
-      ),
-      'foreign keys' => array(
-        'fid' => array(
-          'columns' => array(
-            'fid' => 'fid',
-          ),
-          'table' => 'file_managed',
-        ),
-      ),
-      'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'image',
-      'settings' => array(
-        'default_image' => 0,
-        'uri_scheme' => 'public',
-      ),
-      'translatable' => '0',
-      'type' => 'image',
-    ),
-    'field_instance' => array(
-      'bundle' => 'user',
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'cs_adaptive_image',
-          'settings' => array(
-            'image_link' => '',
-            'styles' => array(
-              'breakpoint_1' => '739',
-              'breakpoint_2' => '979',
-              'breakpoint_3' => '1219',
-              'fallback_style' => 'fluid-image',
-              'max_style' => 'wide-image',
-              'style_1' => 'fluid-image',
-              'style_2' => 'thumbnail-image',
-              'style_3' => 'normal-image',
-            ),
-          ),
-          'type' => 'cs_adaptive_image',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'user',
-      'field_name' => 'field_user_image',
-      'label' => 'User Image',
-      'required' => 0,
-      'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
-        'user_register_form' => 0,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'image',
-        'settings' => array(
-          'manualcrop_crop_info' => 1,
-          'manualcrop_default_crop_area' => 1,
-          'manualcrop_enable' => 0,
-          'manualcrop_inline_crop' => 0,
-          'manualcrop_instant_crop' => 0,
-          'manualcrop_instant_preview' => 1,
-          'manualcrop_require_cropping' => array(
-            'fluid-image' => 0,
-            'medium' => 0,
-            'narrow-image' => 0,
-            'normal-image' => 0,
-            'rectangular-image' => 0,
-            'showcase-wide' => 0,
-            'thumbnail' => 0,
-            'thumbnail-image' => 0,
-            'thumbnail-mini' => 0,
-            'wide-image' => 0,
-          ),
-          'manualcrop_styles_list' => array(
-            'fluid-image' => 0,
-            'medium' => 0,
-            'narrow-image' => 0,
-            'normal-image' => 0,
-            'rectangular-image' => 0,
-            'showcase-wide' => 0,
-            'thumbnail' => 0,
-            'thumbnail-image' => 0,
-            'thumbnail-mini' => 0,
-            'wide-image' => 0,
-          ),
-          'manualcrop_styles_mode' => 'exclude',
-          'manualcrop_thumblist' => 0,
-          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
-        ),
-        'type' => 'image_image',
-        'weight' => '28',
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Awards & Organizations');
@@ -1164,7 +1045,6 @@ function pro_101_user_infrastructure_field_default_fields() {
   t('Specialties');
   t('Title');
   t('Twitter');
-  t('User Image');
 
   return $fields;
 }

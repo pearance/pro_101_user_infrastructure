@@ -143,7 +143,7 @@ function pro_101_user_infrastructure_field_group_info() {
       1 => 'field_last_name',
       2 => 'field_specialties',
       3 => 'field_title',
-      4 => 'field_user_image',
+      4 => 'picture',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

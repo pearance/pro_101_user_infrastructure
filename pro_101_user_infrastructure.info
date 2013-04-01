@@ -49,7 +49,6 @@ features[field][] = user-user-field_pro_bio
 features[field][] = user-user-field_specialties
 features[field][] = user-user-field_title
 features[field][] = user-user-field_twitter
-features[field][] = user-user-field_user_image
 features[field_group][] = group_account|user|user|form
 features[field_group][] = group_awards_organizations|user|user|form
 features[field_group][] = group_biography|user|user|form
